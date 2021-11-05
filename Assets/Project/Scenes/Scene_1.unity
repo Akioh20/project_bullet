@@ -310,6 +310,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 142823318}
     m_Modifications:
+    - target: {fileID: 3590776655428007173, guid: 1c37436956752fe43a14956755770aa9, type: 3}
+      propertyPath: movSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3590776655428007173, guid: 1c37436956752fe43a14956755770aa9, type: 3}
+      propertyPath: turnRatio
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 4625326994157353948, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_Name
       value: Character
@@ -319,12 +327,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4625326994157353949, guid: 1c37436956752fe43a14956755770aa9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625326994157353949, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 4625326994157353949, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15566635
+      value: 0.4677
       objectReference: {fileID: 0}
     - target: {fileID: 4625326994157353949, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_LocalPosition.z
