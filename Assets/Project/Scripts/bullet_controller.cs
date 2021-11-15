@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bullet_controller : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class bullet_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0.8f;
+
     }
 
     // Update is called once per frame
@@ -38,9 +39,11 @@ public class bullet_controller : MonoBehaviour
         float movementInOneFrame = movSpeed * Time.deltaTime;
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
+
+
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bouncy"))
         {
