@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - PortalEnt
   - PortalFin
+  - Fire
+  - Shield
   layers:
   - Default
   - TransparentFX
