@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class menuScript : MonoBehaviour
+public class MenuScript : MonoBehaviour
 {
     public Canvas menuEnter;
     public Canvas menuSelect;
@@ -55,7 +55,14 @@ public class menuScript : MonoBehaviour
     public void GoToDemo()
     {
         Debug.Log("Salta a la escena de la presentacio");
-        SceneManager.LoadScene("Scene_1", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level_1", LoadSceneMode.Single);
     }
-
+    public void GoToLvl1()
+    {
+        SceneManager.LoadScene("Level_1", LoadSceneMode.Single);
+    }
+    public void GoToLvl2()
+    {
+        SceneManager.LoadScene("Level_2", LoadSceneMode.Single);
+    }
 }
