@@ -46,7 +46,7 @@ public class bullet_controller : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bouncy"))
-        {
+        {           
             //Change the mov direction
             currentMovement = collision.contacts[0].normal * currentMovement.magnitude;
             //Change the angle
@@ -54,9 +54,10 @@ public class bullet_controller : MonoBehaviour
             this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
             Time.timeScale = 0.09f;
         }
-
+        
         if (collision.gameObject.CompareTag("Wall"))
         {
+            Debug.Log(":)");
             Destroy(this.gameObject);
         }
     }
