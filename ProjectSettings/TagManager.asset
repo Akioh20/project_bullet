@@ -6,7 +6,12 @@ TagManager:
   tags:
   - Bouncy
   - Wall
+  - PortalEnt
+  - PortalFin
+  - Fire
+  - Shield
   - Enemy
+  - Ralentizone
   layers:
   - Default
   - TransparentFX
