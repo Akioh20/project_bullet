@@ -10,6 +10,9 @@ TagManager:
   - PortalFin
   - Fire
   - Shield
+  - Enemy
+  - Ralentizone
+  - SpecialWall
   layers:
   - Default
   - TransparentFX

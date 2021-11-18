@@ -5,11 +5,8 @@ using UnityEngine;
 public class cameraFollow : MonoBehaviour
 {
     public GameObject follow;
-    public Vector2 minCamPos, maxCamPos;
+    //public Vector2 minCamPos, maxCamPos;
     public float smoothTime;
-
-    public int musicPlaying;
-    private bool musicStart;
 
     private Vector2 velocity;
 
@@ -26,9 +23,12 @@ public class cameraFollow : MonoBehaviour
         float posX = Mathf.SmoothDamp(transform.position.x, follow.transform.position.x, ref velocity.x, smoothTime);
         float posY = Mathf.SmoothDamp(transform.position.y, follow.transform.position.y, ref velocity.y, smoothTime);
 
-        transform.position = new Vector3(
+        transform.position = new Vector3(posX, posY, transform.position.z);
+       /* transform.position = new Vector3(
         Mathf.Clamp(posX, minCamPos.x, maxCamPos.x),
         Mathf.Clamp(posY, minCamPos.y, maxCamPos.y),
-        transform.position.z);
+        transform.position.z);*/
+
+        //this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(follow.transform.position.x, follow.transform.position.y, -10f), Time.deltaTime * 30f);
     }
 }

@@ -1,17 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bullet_controller : MonoBehaviour
 {
     public float movSpeed = 12f;
-    public float turnRatio = 450f;
+    public float turnRatio = 200f;
     Vector3 currentMovement = Vector3.right;
     public Rigidbody2D rb;
+    public Canvas menuRetry;
+    public bool pFire;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0.8f;
+        menuRetry.GetComponent<Canvas>().enabled = false;
+        pFire = false;
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -38,28 +46,41 @@ public class bullet_controller : MonoBehaviour
         float movementInOneFrame = movSpeed * Time.deltaTime;
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Time.timeScale = 1f;
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bouncy"))
         {
-            //Change the mov direction
-            currentMovement = collision.contacts[0].normal * currentMovement.magnitude;
-            //Change the angle
-            this.transform.right = collision.contacts[0].normal;
-            this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
-            Time.timeScale = 0.09f;
+            Bounce(collision.contacts[0].normal);
         }
-
+        
         if (collision.gameObject.CompareTag("Wall"))
         {
+            Debug.Log(":)");
             Destroy(this.gameObject);
+            menuRetry.GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0f;
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         Time.timeScale = 1f;
+    }
+
+    public void Bounce(Vector3 normal)
+    {
+        //Change the mov direction
+        currentMovement = normal * currentMovement.magnitude;
+        //Change the angle
+        this.transform.right = normal;
+        this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
+        Time.timeScale = 0.09f;
     }
 }
