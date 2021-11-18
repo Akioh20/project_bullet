@@ -14,7 +14,7 @@ public class Ralentizone : MonoBehaviour
             bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
             bScript.turnRatio = 350f;
             Debug.Log("Estic ralentitzat");
-            Time.timeScale = 0.2f;
+            Time.timeScale = 0.35f;
         }
     }
 
