@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2028782679}
   - component: {fileID: 2028782680}
   - component: {fileID: 2028782681}
+  - component: {fileID: 1422194127}
   m_Layer: 0
   m_Name: Enemy_patrolling
   m_TagString: Untagged
@@ -187,3 +188,15 @@ MonoBehaviour:
   stopDistance: 10
   activePatrol: 1
   groundDetector: {fileID: 583565081}
+--- !u!114 &1422194127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083914016894759722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55f95c29593c7749be4269ff768ad1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class enemyScript : MonoBehaviour
 {
+
+    public levelController lvlCont;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,7 @@ public class enemyScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
+            lvlCont.DestroyEnemyArray(gameObject);
         }
     }
 }

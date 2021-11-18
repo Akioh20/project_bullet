@@ -1,0 +1,70 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class levelController : MonoBehaviour
+{
+    public Canvas mRetry;
+
+    public GameObject[] enemies;
+    public GameObject bullet;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void Win()
+    {
+
+    }
+
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Scene_1", LoadSceneMode.Single);
+    }
+
+    public void EnemyArray()
+    {
+        if (enemies.Length == 0)
+        {
+            Time.timeScale = 0f;
+            Debug.Log("trukutru?");
+            //FALTA ACABAR
+        }
+    }
+
+    public void DestroyEnemyArray(GameObject enemy)
+    {
+
+        //Soc concient de que hi ha una manera més eficient x no tenir que guardar 
+        //el enemy i passar-ho aqui pero no me'n enrecordo. - Laia.
+
+        //FALTA BORRAR ELS ESPAIS DEL ARRAY QUAN UN ENEMIC SE'N VA A LA PUTA
+
+        if(enemy == enemies[0])
+        {
+            Debug.Log("Enemy name: " + enemy.gameObject.name);
+            Destroy(enemies[0].gameObject);
+        }
+        if (enemy == enemies[1])
+        {
+            Debug.Log("Enemy name: " + enemy.gameObject.name);
+            Destroy(enemies[1].gameObject);
+        }
+        if (enemy == enemies[2])
+        {
+            Debug.Log("Enemy name: " + enemy.gameObject.name);
+            Destroy(enemies[2].gameObject);
+        }
+    }
+}

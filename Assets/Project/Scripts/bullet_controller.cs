@@ -9,10 +9,13 @@ public class bullet_controller : MonoBehaviour
     public float turnRatio = 450f;
     Vector3 currentMovement = Vector3.right;
     public Rigidbody2D rb;
+    public Canvas menuRetry;
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        menuRetry.GetComponent<Canvas>().enabled = false;
     }
 
     // Update is called once per frame
@@ -39,7 +42,7 @@ public class bullet_controller : MonoBehaviour
         float movementInOneFrame = movSpeed * Time.deltaTime;
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
-
+        
 
     }
 
@@ -53,6 +56,8 @@ public class bullet_controller : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
+            menuRetry.GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0f;
         }
     }
 
