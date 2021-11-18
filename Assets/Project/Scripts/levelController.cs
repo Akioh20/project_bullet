@@ -19,12 +19,14 @@ public class levelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        Debug.Log("Enemies array: " + enemies.Length);
+        EnemyArray();
     }
 
     public void Win()
     {
-
+        Debug.Log("Has guanyat");
     }
 
     public void Retry()
@@ -35,49 +37,17 @@ public class levelController : MonoBehaviour
 
     public void EnemyArray()
     {
+        //HAURIA DE SER AIXI
+        /*
         if (enemies.Length == 0)
         {
             Time.timeScale = 0f;
-            Debug.Log("Has guanyat");
-            //FALTA ACABAR
+            Win();
         }
+        */
     }
 
-    //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del arrai, que no de de la escena)
+    //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del array, que no de de la escena)
     //Aixo ens ajudaria a dir, vale, doncs salta a Win o Retry
 
-    /*public void EnemyArray(GameObject enemy)
-    {
-        //FALTA BORRAR ELS ESPAIS DEL ARRAY QUAN UN ENEMIC SE'N VA A LA PUTA
-
-        
-        if(enemy == enemies[0])
-        {
-            Debug.Log("Enemy name: " + enemy.gameObject.name);
-            Destroy(enemies[0].gameObject);
-        }
-        if (enemy == enemies[1])
-        {
-            Debug.Log("Enemy name: " + enemy.gameObject.name);
-            Destroy(enemies[1].gameObject);
-        }
-        if (enemy == enemies[2])
-        {
-            Debug.Log("Enemy name: " + enemy.gameObject.name);
-            Destroy(enemies[2].gameObject);
-        }
-
-        if (enemy == enemies[3])
-        {
-            Debug.Log("Enemy name: " + enemy.gameObject.name);
-            Destroy(enemies[3].gameObject);
-        }
-
-        if (enemy == enemies[4])
-        {
-            Debug.Log("Enemy name: " + enemy.gameObject.name);
-            Destroy(enemies[4].gameObject);
-        }
-        
-    }*/
 }
