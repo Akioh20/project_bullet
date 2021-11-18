@@ -20,6 +20,7 @@ public class shieldScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            //collision.gameObject.GetComponent<bullet_controller>().Bounce(collision.contacts[0].normal);
             Destroy(this.gameObject);
         }
     }

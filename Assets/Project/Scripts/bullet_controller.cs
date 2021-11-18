@@ -47,12 +47,7 @@ public class bullet_controller : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bouncy"))
         {
-            //Change the mov direction
-            currentMovement = collision.contacts[0].normal * currentMovement.magnitude;
-            //Change the angle
-            this.transform.right = collision.contacts[0].normal;
-            this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
-            Time.timeScale = 0.09f;
+            Bounce(collision.contacts[0].normal);
         }
 
         if (collision.gameObject.CompareTag("Wall"))
@@ -64,5 +59,15 @@ public class bullet_controller : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         Time.timeScale = 1f;
+    }
+
+    public void Bounce(Vector3 normal)
+    {
+        //Change the mov direction
+        currentMovement = normal * currentMovement.magnitude;
+        //Change the angle
+        this.transform.right = normal;
+        this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
+        Time.timeScale = 0.09f;
     }
 }
