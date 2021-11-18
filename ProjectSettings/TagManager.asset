@@ -12,6 +12,7 @@ TagManager:
   - Shield
   - Enemy
   - Ralentizone
+  - SpecialWall
   layers:
   - Default
   - TransparentFX

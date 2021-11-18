@@ -10,12 +10,15 @@ public class bullet_controller : MonoBehaviour
     Vector3 currentMovement = Vector3.right;
     public Rigidbody2D rb;
     public Canvas menuRetry;
+    public bool pFire;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
         menuRetry.GetComponent<Canvas>().enabled = false;
+        pFire = false;
     }
 
     // Update is called once per frame

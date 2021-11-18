@@ -11,7 +11,12 @@ public class powerUp : MonoBehaviour
         if (col.gameObject.name == "Character" && gameObject.tag == "Fire")
         {
             Debug.Log("UN POWER UP DE FOC HA TOCAT LA BALA, APLICA MÉS DANY.");
+
+            bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
+            bScript.pFire = true;
+
             Destroy(gameObject);
+
 
             //AQUI DISCUTIR SI UNA BALA POT TENIR MES D'UN POWER UP I COM HO FEM
 

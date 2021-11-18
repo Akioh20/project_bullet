@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 6776534147644022671}
   m_Layer: 0
   m_Name: Wall (1)
-  m_TagString: Wall
+  m_TagString: SpecialWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,3 +671,5 @@ MonoBehaviour:
   movSpeed: 8
   turnRatio: 375
   rb: {fileID: 0}
+  menuRetry: {fileID: 0}
+  pFire: 0
