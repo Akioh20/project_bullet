@@ -18,7 +18,6 @@ public class powerUp : MonoBehaviour
             //UN POWER UP TE TEMPS?
             //TEMPS PER AGAFAR-LO O S'ACTIVA DESPRES DE AGAFAR EL PU?
 
-
             //UN POWER UP TE UNA SOLA BONIFICACIO?
 
             //PARLAR SOBRE ELS POWER UPS
