@@ -22,7 +22,8 @@ public class enemyScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            lvlCont.DestroyEnemyArray(gameObject);
+            Destroy(gameObject);
+            //lvlCont.DestroyEnemyArray(gameObject);
         }
     }
 }

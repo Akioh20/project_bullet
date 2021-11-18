@@ -38,19 +38,19 @@ public class levelController : MonoBehaviour
         if (enemies.Length == 0)
         {
             Time.timeScale = 0f;
-            Debug.Log("trukutru?");
+            Debug.Log("Has guanyat");
             //FALTA ACABAR
         }
     }
 
-    public void DestroyEnemyArray(GameObject enemy)
+    //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del arrai, que no de de la escena)
+    //Aixo ens ajudaria a dir, vale, doncs salta a Win o Retry
+
+    /*public void EnemyArray(GameObject enemy)
     {
-
-        //Soc concient de que hi ha una manera més eficient x no tenir que guardar 
-        //el enemy i passar-ho aqui pero no me'n enrecordo. - Laia.
-
         //FALTA BORRAR ELS ESPAIS DEL ARRAY QUAN UN ENEMIC SE'N VA A LA PUTA
 
+        
         if(enemy == enemies[0])
         {
             Debug.Log("Enemy name: " + enemy.gameObject.name);
@@ -66,5 +66,18 @@ public class levelController : MonoBehaviour
             Debug.Log("Enemy name: " + enemy.gameObject.name);
             Destroy(enemies[2].gameObject);
         }
-    }
+
+        if (enemy == enemies[3])
+        {
+            Debug.Log("Enemy name: " + enemy.gameObject.name);
+            Destroy(enemies[3].gameObject);
+        }
+
+        if (enemy == enemies[4])
+        {
+            Debug.Log("Enemy name: " + enemy.gameObject.name);
+            Destroy(enemies[4].gameObject);
+        }
+        
+    }*/
 }
