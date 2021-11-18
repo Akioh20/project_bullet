@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Bouncy
   - Wall
+  - PortalEnt
+  - PortalFin
+  - Fire
+  - Shield
   - Enemy
   layers:
   - Default
