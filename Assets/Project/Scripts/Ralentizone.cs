@@ -11,6 +11,8 @@ public class Ralentizone : MonoBehaviour
 
         if (col.gameObject.name == "Character" && gameObject.tag == "Ralentizone")
         {
+            bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
+            bScript.turnRatio = 350f;
             Debug.Log("Estic ralentitzat");
             Time.timeScale = 0.2f;
         }
@@ -18,6 +20,12 @@ public class Ralentizone : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        Time.timeScale = 1f;
+
+        if (col.gameObject.name == "Character")
+        {
+            bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
+            bScript.turnRatio = 200f;
+            Time.timeScale = 1f;
+        }
     }
 }

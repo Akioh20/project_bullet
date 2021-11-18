@@ -30,7 +30,7 @@ public class levelController : MonoBehaviour
     public void Retry()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Scene_1", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level_1", LoadSceneMode.Single);
     }
 
     public void EnemyArray()

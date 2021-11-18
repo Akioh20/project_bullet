@@ -340,7 +340,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 688337191}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
         m_MethodName: GoToSelect
         m_Mode: 1
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 688337191}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
         m_MethodName: GoToSelect
         m_Mode: 1

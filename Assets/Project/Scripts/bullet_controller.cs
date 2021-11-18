@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class bullet_controller : MonoBehaviour
 {
     public float movSpeed = 12f;
-    public float turnRatio = 450f;
+    public float turnRatio = 200f;
     Vector3 currentMovement = Vector3.right;
     public Rigidbody2D rb;
     public Canvas menuRetry;
@@ -19,6 +19,7 @@ public class bullet_controller : MonoBehaviour
     {
         menuRetry.GetComponent<Canvas>().enabled = false;
         pFire = false;
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -45,8 +46,11 @@ public class bullet_controller : MonoBehaviour
         float movementInOneFrame = movSpeed * Time.deltaTime;
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
-        
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
