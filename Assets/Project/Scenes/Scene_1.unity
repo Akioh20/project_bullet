@@ -309,7 +309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &232391657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,6 +613,14 @@ PrefabInstance:
     - target: {fileID: 1083914016894759722, guid: 643cb7f995e8c2045baef8318b89b264, type: 3}
       propertyPath: m_Name
       value: Enemy_patrolling
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038206986218915403, guid: 643cb7f995e8c2045baef8318b89b264, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038206986218915403, guid: 643cb7f995e8c2045baef8318b89b264, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 7392846380264623415, guid: 643cb7f995e8c2045baef8318b89b264, type: 3}
       propertyPath: m_RootOrder
@@ -1416,7 +1424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1295040606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1875,6 +1883,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 544088981}
     m_Modifications:
+    - target: {fileID: 1122947003, guid: 39496d72e4e5ece43b4034aff0164fd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122947003, guid: 39496d72e4e5ece43b4034aff0164fd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.73
+      objectReference: {fileID: 0}
     - target: {fileID: 1676369893, guid: 39496d72e4e5ece43b4034aff0164fd3, type: 3}
       propertyPath: lvlCont
       value: 

@@ -55,7 +55,7 @@ public class menuScript : MonoBehaviour
     public void GoToDemo()
     {
         Debug.Log("Salta a la escena de la presentacio");
-        SceneManager.LoadScene("Scene_1", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level_1", LoadSceneMode.Single);
     }
 
 }
