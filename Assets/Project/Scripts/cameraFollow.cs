@@ -5,10 +5,10 @@ using UnityEngine;
 public class cameraFollow : MonoBehaviour
 {
     public GameObject follow;
-    public Vector2 minCamPos, maxCamPos;
-    public float smoothTime;
+    //public Vector2 minCamPos, maxCamPos;
+    //public float smoothTime;
 
-    private Vector2 velocity;
+    //private Vector2 velocity;
 
     void Start()
     {

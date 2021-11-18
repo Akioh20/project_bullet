@@ -11,6 +11,7 @@ TagManager:
   - Fire
   - Shield
   - Enemy
+  - Ralentizone
   layers:
   - Default
   - TransparentFX
