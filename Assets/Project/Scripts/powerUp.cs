@@ -13,12 +13,15 @@ public class powerUp : MonoBehaviour
         {
             bScript.pFire = true;
             Destroy(gameObject);
-
         }
 
         if (col.gameObject.name == "Character" && gameObject.tag == "Shield")
         {
+            /* L'ANTIGA PARET
             Debug.Log("Ara pots trencar una paret, pero nomes una");
+            Destroy(gameObject);
+            Destroy(col.gameObject);
+            */
             Destroy(gameObject);
             bScript.pShield = true;
         }

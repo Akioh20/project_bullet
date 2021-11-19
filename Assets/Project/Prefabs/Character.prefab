@@ -102,6 +102,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   menuRetry: {fileID: 0}
   pFire: 0
+  pShield: 0
 --- !u!61 &478431524
 BoxCollider2D:
   m_ObjectHideFlags: 0

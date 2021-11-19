@@ -18,6 +18,7 @@ public class bullet_controller : MonoBehaviour
     {
         menuRetry.GetComponent<Canvas>().enabled = false;
         pFire = false;
+        pShield = false;
         Time.timeScale = 0f;
     }
 
@@ -63,9 +64,10 @@ public class bullet_controller : MonoBehaviour
         {
             if (pShield)
             {
-                //Si tens el pUp Shield, destrueixes la paret i et treus el pUp
-                Destroy(collision.gameObject);
+                //Si tens el pUp Shield, et pots xocar contra una paret pero adeu siau pUp
                 pShield = false;
+                Debug.Log("CUIDADO QUE JA NO TENS POWER UP");
+                Debug.Log("POWER UP SHIELD: " + pShield);
             }
             else
             {
