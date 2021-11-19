@@ -20,13 +20,15 @@ public class levelController : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("Enemies array: " + enemies.Length);
+        //Debug.Log("Enemies array: " + enemies.Length);
         EnemyArray();
     }
 
     public void Win()
     {
+        Time.timeScale = 0f;
         Debug.Log("Has guanyat");
+        //aqui llavors actives canvas i el empty de win 
     }
     
     public void Retry()
@@ -38,15 +40,12 @@ public class levelController : MonoBehaviour
     public void EnemyArray()
     {
         //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del array, que no de de la escena)
+        //------------ES BORREN DE LA ESCENA DES DE L'SCRIPT ENEMY
         //Aixo ens ajudaria a dir, vale, doncs salta a Win o Retry
 
-        //HAURIA DE SER AIXI
-        /*
         if (enemies.Length == 0)
         {
-            Time.timeScale = 0f;
             Win();
         }
-        */
     }
 }
