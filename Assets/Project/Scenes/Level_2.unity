@@ -4229,9 +4229,6 @@ MonoBehaviour:
   - {fileID: 1119703085}
   - {fileID: 1727921108}
   - {fileID: 529473459}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   bullet: {fileID: 2095876662}
 --- !u!4 &2121458339
 Transform:

@@ -10,17 +10,8 @@ public class levelController : MonoBehaviour
     public GameObject[] enemies;
     public GameObject bullet;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-
-        //Debug.Log("Enemies array: " + enemies.Length);
         EnemyArray();
     }
 
@@ -42,10 +33,12 @@ public class levelController : MonoBehaviour
         //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del array, que no de de la escena)
         //------------ES BORREN DE LA ESCENA DES DE L'SCRIPT ENEMY
         //Aixo ens ajudaria a dir, vale, doncs salta a Win o Retry
-
-        if (enemies.Length == 0)
+        bool finished = true;
+        for (int i = 0; i < enemies.Length; i++)
         {
-            Win();
+            finished &= enemies[i] == null;
         }
+        if (finished)
+            Win();
     }
 }

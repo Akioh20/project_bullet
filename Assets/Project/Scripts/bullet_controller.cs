@@ -13,8 +13,6 @@ public class bullet_controller : MonoBehaviour
     public bool pFire;
     public bool pShield;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -65,13 +63,15 @@ public class bullet_controller : MonoBehaviour
         {
             if (pShield)
             {
-                Debug.Log("Doncs aqui elimines el pShield i llavors la paret");
+                //Si tens el pUp Shield, destrueixes la paret i et treus el pUp
                 Destroy(collision.gameObject);
                 pShield = false;
             }
             else
             {
+                //Si no tens el pUp Shield, adeu siau
                 Destroy(this.gameObject);
+                Destroy(Camera.main.gameObject.GetComponent<cameraFollow>());
                 menuRetry.GetComponent<Canvas>().enabled = true;
                 Time.timeScale = 0f;
             }

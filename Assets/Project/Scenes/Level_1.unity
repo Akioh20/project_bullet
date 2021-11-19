@@ -441,8 +441,6 @@ MonoBehaviour:
   - {fileID: 2093254663}
   - {fileID: 57980323}
   - {fileID: 1167315341}
-  - {fileID: 0}
-  - {fileID: 0}
   bullet: {fileID: 497942674}
 --- !u!4 &208052827
 Transform:
