@@ -8,16 +8,13 @@ public class WallDestroy : MonoBehaviour
     {
         if(col.gameObject.tag == "Player" && gameObject.tag == "SpecialWall")
         {
-            //Agafo l'script de la bala i li dic que si 
-            //te TRUE el POWER UP FIRE, destrueixi la paret
             bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
 
             if (bScript.pFire)
             {
-                Debug.Log("Aqui entro si el personatje te el pw FIRE");
                 Destroy(gameObject);
+                bScript.pFire = false;
             } 
-
             else Destroy(col.gameObject);
 
             

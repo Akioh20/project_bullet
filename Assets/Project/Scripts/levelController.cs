@@ -28,7 +28,7 @@ public class levelController : MonoBehaviour
     {
         Debug.Log("Has guanyat");
     }
-
+    
     public void Retry()
     {
         Time.timeScale = 1f;
@@ -37,6 +37,9 @@ public class levelController : MonoBehaviour
 
     public void EnemyArray()
     {
+        //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del array, que no de de la escena)
+        //Aixo ens ajudaria a dir, vale, doncs salta a Win o Retry
+
         //HAURIA DE SER AIXI
         /*
         if (enemies.Length == 0)
@@ -46,8 +49,4 @@ public class levelController : MonoBehaviour
         }
         */
     }
-
-    //Necesitariem una funcio que registres toooots els enemicss en un array i els anes borrant (del array, que no de de la escena)
-    //Aixo ens ajudaria a dir, vale, doncs salta a Win o Retry
-
 }

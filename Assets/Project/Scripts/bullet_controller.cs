@@ -11,6 +11,7 @@ public class bullet_controller : MonoBehaviour
     public Rigidbody2D rb;
     public Canvas menuRetry;
     public bool pFire;
+    public bool pShield;
 
 
 
@@ -62,10 +63,18 @@ public class bullet_controller : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Wall"))
         {
-            Debug.Log(":)");
-            Destroy(this.gameObject);
-            menuRetry.GetComponent<Canvas>().enabled = true;
-            Time.timeScale = 0f;
+            if (pShield)
+            {
+                Debug.Log("Doncs aqui elimines el pShield i llavors la paret");
+                Destroy(collision.gameObject);
+                pShield = false;
+            }
+            else
+            {
+                Destroy(this.gameObject);
+                menuRetry.GetComponent<Canvas>().enabled = true;
+                Time.timeScale = 0f;
+            }
         }
     }
 
