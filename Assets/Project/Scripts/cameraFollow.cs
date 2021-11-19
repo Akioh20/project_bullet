@@ -16,12 +16,12 @@ public class cameraFollow : MonoBehaviour
 
     //Utilitzem el fixed update perque les fisiques es puguin fer cada segon en comptes de cada frame. Aixi no donarà problemes
     //depenent de la calitat del ordinador
-    void FixedUpdate()
+    void Update()
     {
         //Emprem el SmoothDamp, que es una funció de la llibrería Mathf, la cual fara que la camara segueixi el character
         //de forma que vaigue una mica retrasada, fent el moviment mes llisa, agradable
-        float posX = Mathf.SmoothDamp(transform.position.x, follow.transform.position.x, ref velocity.x, smoothTime);
-        float posY = Mathf.SmoothDamp(transform.position.y, follow.transform.position.y, ref velocity.y, smoothTime);
+        float posX = Mathf.SmoothDamp(transform.position.x, follow.transform.position.x, ref velocity.x, smoothTime * 60f * Time.deltaTime);
+        float posY = Mathf.SmoothDamp(transform.position.y, follow.transform.position.y, ref velocity.y, smoothTime * 60f * Time.deltaTime);
 
         transform.position = new Vector3(posX, posY, transform.position.z);
        /* transform.position = new Vector3(

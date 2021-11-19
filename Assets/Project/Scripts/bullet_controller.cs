@@ -80,11 +80,6 @@ public class bullet_controller : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Time.timeScale = 1f;
-    }
-
     public void Bounce(Vector3 normal)
     {
         //Change the mov direction
@@ -93,5 +88,11 @@ public class bullet_controller : MonoBehaviour
         this.transform.right = normal;
         this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
         Time.timeScale = 0.09f;
+        Invoke("ResetTimeScale", 0.25f);
+    }
+
+    public void ResetTimeScale()
+    {
+        Time.timeScale = 1f;
     }
 }
