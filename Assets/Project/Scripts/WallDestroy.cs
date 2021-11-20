@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WallDestroy : MonoBehaviour
 {
+    public ParticleSystem deathParticles = null;
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player" && gameObject.tag == "SpecialWall")
@@ -12,11 +14,18 @@ public class WallDestroy : MonoBehaviour
 
             if (bScript.pFire)
             {
+                Instantiate(deathParticles, new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y, col.gameObject.transform.position.z), Quaternion.identity);
                 Destroy(gameObject);
                 bScript.pFire = false;
-            } 
-            else Destroy(col.gameObject);
-
+            }
+            else
+            {
+                //FALTA AÑADIR EL REBOTE
+                Destroy(gameObject);
+                Debug.Log("deberías rebotar bro");
+                Instantiate(deathParticles, new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y, col.gameObject.transform.position.z), Quaternion.identity);
+                //Destroy(col.gameObject);
+            }
             
         }
     }

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122947002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.45, y: 14.24, z: 0}
+  m_LocalPosition: {x: -0.2, y: 2.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7201260354497090896}
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55f95c29593c7749be4269ff768ad1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticles: {fileID: 6809339661727713978, guid: 9380e691d651e80499a9ff5abdec196d, type: 3}
   lvlCont: {fileID: 0}
 --- !u!114 &4092204506874163747
 MonoBehaviour:
@@ -371,3 +372,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50e4103ae40ca64db9cb50babcf7600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticles: {fileID: 487065816059624700, guid: ff64e487411d8684faff7c626c699895, type: 3}

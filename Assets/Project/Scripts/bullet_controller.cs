@@ -5,15 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class bullet_controller : MonoBehaviour
 {
+    #region Public variables
     public float movSpeed = 12f;
     public float turnRatio = 200f;
-    Vector3 currentMovement = Vector3.right;
     public Rigidbody2D rb;
     public Canvas menuRetry;
     public bool pFire;
     public bool pShield;
-
-    // Start is called before the first frame update
+    #endregion
+    public ParticleSystem deathParticles = null;
+    Vector3 currentMovement = Vector3.right;
+    
     void Start()
     {
         menuRetry.GetComponent<Canvas>().enabled = false;
@@ -22,7 +24,6 @@ public class bullet_controller : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         ////// GET THE MOUSE IN WORLD SPACE
@@ -64,14 +65,16 @@ public class bullet_controller : MonoBehaviour
         {
             if (pShield)
             {
-                //Si tens el pUp Shield, et pots xocar contra una paret pero adeu siau pUp
+                //Si tens el powerUp Shield, et pots xocar contra una paret pero adeu siau powerUp
                 pShield = false;
                 Debug.Log("CUIDADO QUE JA NO TENS POWER UP");
                 Debug.Log("POWER UP SHIELD: " + pShield);
             }
             else
             {
-                //Si no tens el pUp Shield, adeu siau
+                //Fem play del sistema de particules al lloc on mor el personatje
+                Instantiate(deathParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                //Si no tens el powerUp Shield, adeu siau
                 Destroy(this.gameObject);
                 Destroy(Camera.main.gameObject.GetComponent<cameraFollow>());
                 menuRetry.GetComponent<Canvas>().enabled = true;
@@ -88,7 +91,7 @@ public class bullet_controller : MonoBehaviour
         this.transform.right = normal;
         this.transform.rotation = Quaternion.Euler(0f, 0f, this.transform.rotation.eulerAngles.z);
         Time.timeScale = 0.09f;
-        Invoke("ResetTimeScale", 0.25f);
+        Invoke("ResetTimeScale", 0.05f);
     }
 
     public void ResetTimeScale()
