@@ -122,3 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d77e6b1b2fbcfd4fb2b35ecf59e3099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticles: {fileID: 1733937939977455748, guid: 229635e64b42504409ab1c5cf0d0f122, type: 3}

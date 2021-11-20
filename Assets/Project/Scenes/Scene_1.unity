@@ -856,10 +856,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3872509751166494304, guid: bb700203255d14349a294bf2c82763cc, type: 3}
-      propertyPath: deathParticles
-      value: 
-      objectReference: {fileID: 4270070399294748457, guid: 32b78e4f30cff024ab3a9ad25856b0ef, type: 3}
     - target: {fileID: 3872509751166494305, guid: bb700203255d14349a294bf2c82763cc, type: 3}
       propertyPath: m_Name
       value: WoodWall
@@ -2069,6 +2065,10 @@ PrefabInstance:
       propertyPath: menuRetry
       value: 
       objectReference: {fileID: 1295040608}
+    - target: {fileID: 3590776655428007173, guid: 1c37436956752fe43a14956755770aa9, type: 3}
+      propertyPath: deathParticles
+      value: 
+      objectReference: {fileID: 4270070399294748457, guid: acf728d30acd05048951ed3a072f339d, type: 3}
     - target: {fileID: 4625326994157353948, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_Name
       value: Character
