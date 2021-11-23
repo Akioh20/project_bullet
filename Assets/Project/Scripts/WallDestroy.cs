@@ -6,7 +6,7 @@ public class WallDestroy : MonoBehaviour
 {
     public ParticleSystem deathParticles = null;
 
-    void OnTriggerEnter2D(Collider2D col)
+    public void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.tag == "Player" && gameObject.tag == "SpecialWall")
         {
@@ -20,11 +20,10 @@ public class WallDestroy : MonoBehaviour
             }
             else
             {
-                //FALTA AÑADIR EL REBOTE
+                //Vuelve a fallar el rebote, tan solo rebota por la parte de la derecha
+                bScript.Bounce(col.contacts[0].normal);
                 Destroy(gameObject);
-                Debug.Log("deberías rebotar bro");
                 Instantiate(deathParticles, new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y, col.gameObject.transform.position.z), Quaternion.identity);
-                //Destroy(col.gameObject);
             }
             
         }

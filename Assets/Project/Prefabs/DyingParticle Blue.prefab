@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382863851400254577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.11, y: -0.0566, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3673,7 +3673,7 @@ ParticleSystem:
     enabled: 0
     serializedVersion: 4
     type: 1
-    collisionMode: 0
+    collisionMode: 1
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
@@ -4876,10 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7d8c31231b403488f1f8ad4733d374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShakeCamera: 0
   time: 1
-  duration: 1
-  magnitude: 1
 --- !u!82 &812988030554381267
 AudioSource:
   m_ObjectHideFlags: 0

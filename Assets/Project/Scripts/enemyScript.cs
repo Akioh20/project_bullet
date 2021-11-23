@@ -26,5 +26,4 @@ public class enemyScript : MonoBehaviour
             //lvlCont.DestroyEnemyArray(gameObject);
         }
     }
-    
 }

@@ -38,16 +38,6 @@ public class Patrol : MonoBehaviour
         if (transform.position == target.position)
         {
             target.position = (target.position == start) ? end : start;
-            if (movingRight)
-            {
-                transform.eulerAngles = new Vector3(0, 0, 90);
-                movingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 180, 90);
-                movingRight = true;
-            }
         }
     }
 }
