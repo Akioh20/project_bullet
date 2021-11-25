@@ -56,8 +56,11 @@ public class bullet_controller : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        CameraShake CamShake = collision.gameObject.GetComponent<CameraShake>();
+
         if (collision.gameObject.CompareTag("Bouncy"))
         {
+            //CamShake.Shake(1, 2);
             Bounce(collision.contacts[0].normal);
         }
         
