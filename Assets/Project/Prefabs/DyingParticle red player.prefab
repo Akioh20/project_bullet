@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4270070399294748457}
   - component: {fileID: 4314783004091986045}
   - component: {fileID: -7912357554147324167}
-  - component: {fileID: -8948007377607092682}
+  - component: {fileID: 6253809073429912207}
   m_Layer: 0
-  m_Name: DyingParticle red
+  m_Name: DyingParticle red player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4877,7 +4877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1
---- !u!82 &-8948007377607092682
+--- !u!82 &6253809073429912207
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4887,7 +4887,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fd42ef903ee3c6c4390035f1182d91ce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6e6a092c73c633640970b0e2c9253058, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
