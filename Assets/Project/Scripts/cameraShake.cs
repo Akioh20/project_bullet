@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraShake : MonoBehaviour
+/*Codigo antiguo --> no sabemos si lo queremos o no
+ * 
+ * public class cameraShake : MonoBehaviour
 {
-   /* public IEnumerator Shake(float duration, float magnitude)
+   public IEnumerator Shake(float duration, float magnitude)
     {
         Vector3 originalPos = transform.localPosition;
 
@@ -23,5 +25,38 @@ public class cameraShake : MonoBehaviour
         }
 
         transform.localPosition = originalPos;
-    }*/
+    }
+}*/
+
+public class cameraShake : MonoBehaviour
+{
+    public static cameraShake Instance;
+    Vector3 startPos;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+    void Start()
+    {
+        //This will set the starting position 
+        startPos = transform.position;
+    }
+
+    IEnumerator Shake()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            transform.position = new Vector3(startPos.x + Random.Range(-0.1f, 0.1f), startPos.y + Random.Range(-0.1f, 0.1f), transform.position.z);
+            yield return new WaitForSeconds(0.05f);
+        }
+        transform.position = startPos;
+    }
+
+    public void ShakeMe()
+    {
+        StartCoroutine(Shake());
+    }
+
 }

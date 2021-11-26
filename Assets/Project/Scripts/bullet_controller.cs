@@ -13,6 +13,8 @@ public class bullet_controller : MonoBehaviour
     public bool pFire;
     public bool pShield;
     #endregion
+
+    private int counter = 0;
     public ParticleSystem deathParticles = null;
     Vector3 currentMovement = Vector3.right;
     
@@ -48,9 +50,10 @@ public class bullet_controller : MonoBehaviour
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && counter == 0)
         {
             Time.timeScale = 1f;
+            counter += 1;
         }
     }
 

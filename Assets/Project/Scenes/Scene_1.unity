@@ -408,24 +408,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4625326994157353949, guid: 1c37436956752fe43a14956755770aa9, type: 3}
   m_PrefabInstance: {fileID: 4625326994350043902}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &496249393 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4089215827792757690, guid: e94a96ab1e1df4745a4b68a4cbae76e1, type: 3}
-  m_PrefabInstance: {fileID: 8365449777350298332}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &496249394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496249393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a6102228c352ad4181418cac5a03b20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceParticles: {fileID: 4270070399294748457, guid: 5d8fecd1cf8068b4db88147fb701d623, type: 3}
 --- !u!1 &497942674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4625326994157353948, guid: 1c37436956752fe43a14956755770aa9, type: 3}
@@ -879,29 +861,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3872509751166494304, guid: bb700203255d14349a294bf2c82763cc, type: 3}
-      propertyPath: onWallCollision.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3872509751166494304, guid: bb700203255d14349a294bf2c82763cc, type: 3}
-      propertyPath: onWallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3872509751166494304, guid: bb700203255d14349a294bf2c82763cc, type: 3}
-      propertyPath: onWallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 497942674}
-    - target: {fileID: 3872509751166494304, guid: bb700203255d14349a294bf2c82763cc, type: 3}
-      propertyPath: onWallCollision.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3872509751166494305, guid: bb700203255d14349a294bf2c82763cc, type: 3}
       propertyPath: m_Name
       value: WoodWall
-      objectReference: {fileID: 0}
-    - target: {fileID: 8457328273579237200, guid: bb700203255d14349a294bf2c82763cc, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb700203255d14349a294bf2c82763cc, type: 3}
@@ -1849,11 +1811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 5fb5e6f43e8072f40a2469c6006f98eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.24809104
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 5fb5e6f43e8072f40a2469c6006f98eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.000543
+      value: 4.71
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 5fb5e6f43e8072f40a2469c6006f98eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2170,10 +2132,6 @@ PrefabInstance:
       propertyPath: menuRetry
       value: 
       objectReference: {fileID: 1295040608}
-    - target: {fileID: 3590776655428007173, guid: 1c37436956752fe43a14956755770aa9, type: 3}
-      propertyPath: deathParticles
-      value: 
-      objectReference: {fileID: 4270070399294748457, guid: acf728d30acd05048951ed3a072f339d, type: 3}
     - target: {fileID: 4625326994157353948, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_Name
       value: Character

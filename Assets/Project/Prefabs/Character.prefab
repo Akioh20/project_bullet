@@ -103,7 +103,7 @@ MonoBehaviour:
   menuRetry: {fileID: 0}
   pFire: 0
   pShield: 0
-  deathParticles: {fileID: 4270070399294748457, guid: 32b78e4f30cff024ab3a9ad25856b0ef, type: 3}
+  deathParticles: {fileID: 4270070399294748457, guid: acf728d30acd05048951ed3a072f339d, type: 3}
 --- !u!61 &478431524
 BoxCollider2D:
   m_ObjectHideFlags: 0
