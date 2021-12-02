@@ -9,7 +9,7 @@ public class bullet_controller : MonoBehaviour
     public float movSpeed = 12f;
     public float turnRatio = 200f;
     public Rigidbody2D rb;
-    public Canvas menuRetry;
+    public Canvas cRetry;
     public bool pFire;
     public bool pShield;
     #endregion
@@ -20,7 +20,7 @@ public class bullet_controller : MonoBehaviour
     
     void Start()
     {
-        menuRetry.GetComponent<Canvas>().enabled = false;
+        cRetry.GetComponent<Canvas>().enabled = false;
         pFire = false;
         pShield = false;
         Time.timeScale = 0f;
@@ -83,7 +83,7 @@ public class bullet_controller : MonoBehaviour
                 //Si no tens el powerUp Shield, adeu siau
                 Destroy(this.gameObject);
                 Destroy(Camera.main.gameObject.GetComponent<cameraFollow>());
-                menuRetry.GetComponent<Canvas>().enabled = true;
+                cRetry.GetComponent<Canvas>().enabled = true;
                 Time.timeScale = 0f;
             }
         }
