@@ -16,9 +16,13 @@ public class cameraFollow : MonoBehaviour
     {
         //Emprem el SmoothDamp, que es una funció de la llibrería Mathf, la cual fara que la camara segueixi el character
         //de forma que vaigue una mica retrasada, fent el moviment mes llisa, agradable
-        float posX = Mathf.SmoothDamp(transform.position.x, follow.transform.position.x, ref velocity.x, smoothTime * 60f * Time.deltaTime);
-        float posY = Mathf.SmoothDamp(transform.position.y, follow.transform.position.y, ref velocity.y, smoothTime * 60f * Time.deltaTime);
+        if (follow == null)
+            return;
 
+        //float posX = Mathf.SmoothDamp(transform.position.x, follow.transform.position.x, ref velocity.x, smoothTime, 10000f, Time.deltaTime);
+        //float posY = Mathf.SmoothDamp(transform.position.y, follow.transform.position.y, ref velocity.y, smoothTime, 10000f, Time.deltaTime);
+        float posX = Mathf.Lerp(transform.position.x, follow.transform.position.x, 20.0f * Time.deltaTime);
+        float posY = Mathf.Lerp(transform.position.y, follow.transform.position.y, 20.0f * Time.deltaTime);
         transform.position = new Vector3(posX, posY, transform.position.z);
        /* transform.position = new Vector3(
         Mathf.Clamp(posX, minCamPos.x, maxCamPos.x),

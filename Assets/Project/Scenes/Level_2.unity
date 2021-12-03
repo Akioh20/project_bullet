@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5727968476731756673, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5727968476731756677, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
       propertyPath: m_Pivot.x
@@ -1523,7 +1523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997528, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997540, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_Pivot.x
@@ -3555,22 +3555,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1542627905}
     m_Modifications:
-    - target: {fileID: 478431524, guid: 1c37436956752fe43a14956755770aa9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.6353309
-      objectReference: {fileID: 0}
-    - target: {fileID: 478431524, guid: 1c37436956752fe43a14956755770aa9, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.0037211627
-      objectReference: {fileID: 0}
     - target: {fileID: 3590776655428007173, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: cRetry
       value: 
       objectReference: {fileID: 382898298}
-    - target: {fileID: 3590776655428007173, guid: 1c37436956752fe43a14956755770aa9, type: 3}
-      propertyPath: menuRetry
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4625326994157353948, guid: 1c37436956752fe43a14956755770aa9, type: 3}
       propertyPath: m_Name
       value: Character
