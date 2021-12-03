@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyScript : MonoBehaviour
 {
     public ParticleSystem deathParticles = null;
-    public levelController lvlCont;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,6 @@ public class enemyScript : MonoBehaviour
         {
             Instantiate(deathParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
             Destroy(gameObject);
-            //lvlCont.DestroyEnemyArray(gameObject);
         }
     }
 }
