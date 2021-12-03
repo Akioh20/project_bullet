@@ -6,13 +6,13 @@ public class powerUp : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Un Power Up ha tocat amb el Character");
+        Debug.Log("Un Power Up has hit the Character");
         bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
 
         if (col.gameObject.name == "Character" && gameObject.tag == "Fire")
         {
             bScript.pFire = true;
-            Debug.Log("Ha agafat el P-Fire");
+            Debug.Log("P-Fire caught");
             Destroy(gameObject);
         }
 
@@ -23,8 +23,9 @@ public class powerUp : MonoBehaviour
             Destroy(gameObject);
             Destroy(col.gameObject);
             */
+
             bScript.pShield = true;
-            Debug.Log("Ha agafat el P-Shield");
+            Debug.Log("P-Shield caught");
             Destroy(gameObject);
         }
     }

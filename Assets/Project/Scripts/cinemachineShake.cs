@@ -43,15 +43,21 @@ public class cinemachineShake : MonoBehaviour
         {
             //And here, the variable is going to be decrease as time goes by
             shakeTimer -= Time.deltaTime;
-             //If he variable is lower or equal to zero
-     
             //Time over
             //In this moment, we will set the amplitude to zero
             CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin =
               cinemachineVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
             cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = Mathf.Lerp(startingIntensity, 0f, shakeTimer / shakeTimerTotal);
-            }
         }
+        else
+        {
+            shakeTimer = 0;
+            CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin =
+              cinemachineVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = Mathf.Lerp(startingIntensity, 0f, 5 - shakeTimer / shakeTimerTotal);
+        }
+
+    }
     }
 
 

@@ -60,32 +60,33 @@ public class bullet_controller : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        // CameraShake CamShake = collision.gameObject.GetComponent<CameraShake>();
         if (collision.gameObject.CompareTag("Bouncy"))
         {
             Bounce(collision.contacts[0].normal);
 
-            //Idk why is it wrong?
-            cinemachineShake.Instance.ShakeCamera(50f, 1f);
-
-            //CamShake.Instantiate.Shake(5f, 1f);
-            // CamShake.Shake(5f, 1f);
+            //Set the intensity of the shake and the total time that it will shake
+            cinemachineShake.Instance.ShakeCamera(4f, 0.1f);
         }
 
         if (collision.gameObject.CompareTag("Wall"))
         {
             if (pShield)
             {
-                //Si tens el powerUp Shield, et pots xocar contra una paret pero adeu siau powerUp
+                //If u have the powerUp Shield, you can collide to a normal wall, and the powerUp dissapear
                 pShield = false;
-                Debug.Log("CUIDADO QUE JA NO TENS POWER UP");
+
+                //In order, than when it collides, it bounces in the other way
+                Bounce(collision.contacts[0].normal);
+
+                Debug.Log("YOU DON'T HAVE THE POWER UP");
                 Debug.Log("POWER UP SHIELD: " + pShield);
             }
             else
             {
-                //Fem play del sistema de particules al lloc on mor el personatje
+                //We make a play of the particles system in the position where the character dies
                 Instantiate(deathParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                //Si no tens el powerUp Shield, adeu siau
+              
+                //If u don't have the powerUp Shield, you die
                 Destroy(this.gameObject);
                 Destroy(Camera.main.gameObject.GetComponent<cameraFollow>());
                 cRetry.GetComponent<Canvas>().enabled = true;
