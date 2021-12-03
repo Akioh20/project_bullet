@@ -70,8 +70,11 @@ public class bullet_controller : MonoBehaviour
 
             //Idk why is it wrong?
             //CinemachineShake.Instance.ShakeCamera(5f, 1f);
+<<<<<<< Updated upstream
             //CamShake.Instantiate.Shake(5f, 1f);
             CamShake.Shake(5f, 1f);
+=======
+>>>>>>> Stashed changes
         }
 
         if (collision.gameObject.CompareTag("Wall"))
