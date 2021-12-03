@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Cinemachine;
+
 
 public class bullet_controller : MonoBehaviour
 {
@@ -65,6 +67,9 @@ public class bullet_controller : MonoBehaviour
         {
             //CamShake.Shake(1, 2);
             Bounce(collision.contacts[0].normal);
+
+            //Idk why is it wrong?
+            CinemachineShake.Instance.ShakeCamera(5f, 1f);
         }
         
         if (collision.gameObject.CompareTag("Wall"))
