@@ -22,12 +22,15 @@ public class levelController : MonoBehaviour
         cActive = false;
 
         scene = SceneManager.GetActiveScene(); //AGAFA LA ESCENA ACTIVA, NECESSARI PER EL RETRY
-        
     }
 
     void Update()
     {
         EnemyArray();
+        if (bullet = null)
+        {
+            activateCRetry();
+        }
     }
 
     /*--TOT CANVAS WIN--*/
@@ -68,7 +71,6 @@ public class levelController : MonoBehaviour
     /*--TOT CANVAS RETRY--*/
     public void activateCRetry()
     {
-        //Time.timeScale = 0f;
         Debug.Log("Has perdut");
         cRetry.GetComponent<Canvas>().enabled = true;
         cActive = true;
@@ -92,7 +94,6 @@ public class levelController : MonoBehaviour
         {
             finished &= enemies[i] == null;
         }
-        if (finished)
-            activateCWin();
+        if (finished) activateCWin();
     }
 }

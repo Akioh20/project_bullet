@@ -10,10 +10,6 @@ public class cameraFollow : MonoBehaviour
 
     private Vector2 velocity;
 
-    void Start()
-    {
-    }
-
     //Utilitzem el fixed update perque les fisiques es puguin fer cada segon en comptes de cada frame. Aixi no donarà problemes
     //depenent de la calitat del ordinador
     void Update()
@@ -30,5 +26,6 @@ public class cameraFollow : MonoBehaviour
         transform.position.z);*/
 
         //this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(follow.transform.position.x, follow.transform.position.y, -10f), Time.deltaTime * 30f);
+
     }
 }

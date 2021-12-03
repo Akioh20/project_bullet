@@ -12,6 +12,7 @@ public class powerUp : MonoBehaviour
         if (col.gameObject.name == "Character" && gameObject.tag == "Fire")
         {
             bScript.pFire = true;
+            Debug.Log("Ha agafat el P-Fire");
             Destroy(gameObject);
         }
 
@@ -22,8 +23,9 @@ public class powerUp : MonoBehaviour
             Destroy(gameObject);
             Destroy(col.gameObject);
             */
-            Destroy(gameObject);
             bScript.pShield = true;
+            Debug.Log("Ha agafat el P-Shield");
+            Destroy(gameObject);
         }
     }
 }
