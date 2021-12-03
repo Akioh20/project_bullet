@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Cinemachine;
 
 
 public class bullet_controller : MonoBehaviour
@@ -61,20 +60,16 @@ public class bullet_controller : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        CameraShake CamShake = collision.gameObject.GetComponent<CameraShake>();
-
+        // CameraShake CamShake = collision.gameObject.GetComponent<CameraShake>();
         if (collision.gameObject.CompareTag("Bouncy"))
         {
-            //CamShake.Shake(1, 2);
             Bounce(collision.contacts[0].normal);
 
             //Idk why is it wrong?
-            //CinemachineShake.Instance.ShakeCamera(5f, 1f);
-<<<<<<< Updated upstream
+            cinemachineShake.Instance.ShakeCamera(50f, 1f);
+
             //CamShake.Instantiate.Shake(5f, 1f);
-            CamShake.Shake(5f, 1f);
-=======
->>>>>>> Stashed changes
+            // CamShake.Shake(5f, 1f);
         }
 
         if (collision.gameObject.CompareTag("Wall"))
