@@ -69,9 +69,11 @@ public class bullet_controller : MonoBehaviour
             Bounce(collision.contacts[0].normal);
 
             //Idk why is it wrong?
-            CinemachineShake.Instance.ShakeCamera(5f, 1f);
+            //CinemachineShake.Instance.ShakeCamera(5f, 1f);
+            //CamShake.Instantiate.Shake(5f, 1f);
+            CamShake.Shake(5f, 1f);
         }
-        
+
         if (collision.gameObject.CompareTag("Wall"))
         {
             if (pShield)
