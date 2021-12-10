@@ -6,7 +6,7 @@ public class powerUp : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Un Power Up has hit the Character");
+        Debug.Log("A Power Up has hit the Character");
         bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
 
         if (col.gameObject.name == "Character" && gameObject.tag == "Fire")

@@ -64,8 +64,9 @@ public class bullet_controller : MonoBehaviour
         {
             Bounce(collision.contacts[0].normal);
 
+            //////For the moment, we're not going to use it
             //Set the intensity of the shake and the total time that it will shake
-            cinemachineShake.Instance.ShakeCamera(4f, 0.1f);
+            //cinemachineShake.Instance.ShakeCamera(4f, 0.1f);
         }
 
         if (collision.gameObject.CompareTag("Wall"))
