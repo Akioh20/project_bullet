@@ -709,16 +709,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalScale.y
       value: 7.6875
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07
+      value: 0.078
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.53
+      value: -9.75
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1633,16 +1637,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalScale.y
-      value: 12.5625
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.71
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.46
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7848972737377130940, guid: 0fd456f57ba4af742abfdca06d1aba38, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2344,7 +2352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997528, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997540, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_Pivot.x
