@@ -56,6 +56,16 @@ public class bullet_controller : MonoBehaviour
             Time.timeScale = 1f;
             counter += 1;
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            movSpeed = 8f;
+        }
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            movSpeed = 6f;
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
