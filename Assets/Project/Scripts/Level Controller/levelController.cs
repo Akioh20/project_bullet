@@ -33,7 +33,7 @@ public class levelController : MonoBehaviour
     void Update()
     {
         EnemyArray();
-        if (bullet = null)
+        if (bullet == null)
         {
             activateCRetry();
         }
