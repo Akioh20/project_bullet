@@ -29,6 +29,8 @@ public class bullet_controller : MonoBehaviour
 
     void Update()
     {
+
+        #region MOVEMENT
         ////// GET THE MOUSE IN WORLD SPACE
         Vector2 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -50,16 +52,16 @@ public class bullet_controller : MonoBehaviour
         float movementInOneFrame = movSpeed * Time.deltaTime;
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
+        #endregion
 
-
-        //EN CAP MOMENT ESTEM FENT SERVIR LA VARIABLE COUNTER. S
-        //Debug.Log("Counter: " + counter);
-
+        
         if (Input.GetMouseButtonDown(0) && counter == 0)
         {
             ResetBullet();
         }
 
+
+        #region SPEED
         if (Input.GetMouseButtonDown(1))
         {
             movSpeed = 8f;
@@ -69,6 +71,7 @@ public class bullet_controller : MonoBehaviour
         {
             movSpeed = 6f;
         }
+        #endregion
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

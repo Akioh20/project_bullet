@@ -220,6 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+--- !u!223 &20328164 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3258691258521960875, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+  m_PrefabInstance: {fileID: 20328163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &76640428
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cRetry: {fileID: 1690143265}
-  cPause: {fileID: 0}
+  cPause: {fileID: 20328164}
+  timeToReturn: 5
   enemies:
   - {fileID: 868086304}
   bullet: {fileID: 2095876662}
