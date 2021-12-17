@@ -71,10 +71,7 @@ public class levelControllerIntro : MonoBehaviour
         Debug.Log("Ara aqui faig magia");
         cPause.GetComponent<Canvas>().enabled = true;
         pActive = true;
-        if (pActive)
-        {
-            Time.timeScale = 0f;
-        }
+        if (pActive) Time.timeScale = 0f;
     }
 
     public void bReturnPause()

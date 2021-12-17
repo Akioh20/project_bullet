@@ -7,10 +7,13 @@ public class levelController : MonoBehaviour
 {
     public Canvas cRetry;
     public Canvas cWin;
+    public Canvas cPause;
 
     Scene scene;
 
     bool cActive;
+    bool pActive;
+
 
     public GameObject[] enemies;
     public GameObject bullet;
@@ -21,6 +24,9 @@ public class levelController : MonoBehaviour
         cWin.GetComponent<Canvas>().enabled = false;
         cActive = false;
 
+        cPause.GetComponent<Canvas>().enabled = false;
+        pActive = false;
+
         scene = SceneManager.GetActiveScene(); //AGAFA LA ESCENA ACTIVA, NECESSARI PER EL RETRY
     }
 
@@ -30,6 +36,10 @@ public class levelController : MonoBehaviour
         if (bullet = null)
         {
             activateCRetry();
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            activeCPause();
         }
     }
 
@@ -84,6 +94,24 @@ public class levelController : MonoBehaviour
     public void bRetry()
     {
         SceneManager.LoadScene(scene.name);
+    }
+
+
+    /*--TOT CANVAS PAUSE--*/
+
+    public void activeCPause()
+    {
+        Debug.Log("Ara aqui faig magia");
+        cPause.GetComponent<Canvas>().enabled = true;
+        pActive = true;
+        if (pActive) Time.timeScale = 0f;
+    }
+
+    public void bReturnPause()
+    {
+        cPause.GetComponent<Canvas>().enabled = false;
+        Time.timeScale = 1f;
+        pActive = false;
     }
 
     /*--MIRA TOTA L'ESTONA X ENEMICS QUE QUEDEN--*/
