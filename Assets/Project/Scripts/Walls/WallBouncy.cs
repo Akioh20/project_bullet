@@ -5,11 +5,13 @@ using UnityEngine;
 public class WallBouncy : MonoBehaviour
 {
     //////VARIABLES
-    public Camera cam;
-    public float zoomMultiplier = 2;
-    public float defaultFov = 90;
-    public float zoomDuration = 0.01f;
     public ParticleSystem bounceParticles = null;
+
+    int zoom = 20;
+    int normal = 60;
+    float smooth = 5; //this will make the transition not so abrupt
+
+    private bool isZoomed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,17 +30,20 @@ public class WallBouncy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Instantiate(bounceParticles, new Vector3(collision.transform.position.x, collision.transform.position.y , collision.transform.position.z), Quaternion.identity);
-            ZoomCamera(defaultFov / zoomMultiplier);
+            isZoomed = !isZoomed; //this tell the program that when the player collides, the variable must be opposite as what is set in the init
         }
-        else if (cam.fieldOfView != defaultFov)
-        {
-            ZoomCamera(defaultFov);
-        }
-    }
 
-    void ZoomCamera(float target)
-    {
-        float angle = Mathf.Abs((defaultFov / zoomMultiplier) - defaultFov);
-        cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, target, angle / zoomDuration * Time.deltaTime);
+        if(isZoomed)
+        {
+            //the boolean is true, will make the zoom
+            GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, zoom, Time.deltaTime * smooth);
+        }
+        else
+        {
+            //if not it will return to normal
+            GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, normal, Time.deltaTime * smooth);
+        }
+
     }
+       
 }
