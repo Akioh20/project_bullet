@@ -46,15 +46,10 @@ public class levelController : MonoBehaviour
     /*--TOT CANVAS WIN--*/
     public void activateCWin()
     {
-        //Time.timeScale = 0f;
-        Debug.Log("Has guanyat");
         cWin.GetComponent<Canvas>().enabled = true;
         cActive = true;
-        if (cActive)
-        {
-            Time.timeScale = 0f;
-            Debug.Log("HE PARAT EL TEMPS");
-        }
+        if (cActive) Time.timeScale = 0f;
+
     }
 
     public void goToMenu()
@@ -84,11 +79,8 @@ public class levelController : MonoBehaviour
         Debug.Log("Has perdut");
         cRetry.GetComponent<Canvas>().enabled = true;
         cActive = true;
-        if (cActive)
-        {
-            Time.timeScale = 0f;
-            Debug.Log("HE PARAT EL TEMPS");
-        }
+        if (cActive) Time.timeScale = 0f;
+
     }
 
     public void bRetry()
@@ -101,7 +93,6 @@ public class levelController : MonoBehaviour
 
     public void activeCPause()
     {
-        Debug.Log("Ara aqui faig magia");
         cPause.GetComponent<Canvas>().enabled = true;
         pActive = true;
         if (pActive) Time.timeScale = 0f;
@@ -112,6 +103,7 @@ public class levelController : MonoBehaviour
         cPause.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1f;
         pActive = false;
+        //AQUI FALTA EL CONTADOR, PERO NO DESDE EL BOTO
     }
 
     /*--MIRA TOTA L'ESTONA X ENEMICS QUE QUEDEN--*/

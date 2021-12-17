@@ -12,6 +12,8 @@ public class levelControllerIntro : MonoBehaviour
     bool cActive;
     bool pActive;
 
+    public float timetoReturn = 5f;
+
     public GameObject[] enemies;
     public GameObject bullet;
 
@@ -79,8 +81,8 @@ public class levelControllerIntro : MonoBehaviour
         cPause.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1f;
         pActive = false;
+        //AQUI FALTA EL CONTADOR, PERO NO DESDE EL BOTO
     }
-
 
     /*--OBSERVAR QUANTS ENEMICS QUEDEN--*/
     public void EnemyArray()
