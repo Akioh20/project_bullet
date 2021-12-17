@@ -42,27 +42,22 @@ public class levelController : MonoBehaviour
             activeCPause();
         }
     }
-
-    /*--TOT CANVAS WIN--*/
-    public void activateCWin()
+    /*--NEXT LEVEL, BUILD INDEX--*/
+    #region nextLevel
+    public void nextLevel()
     {
-        cWin.GetComponent<Canvas>().enabled = true;
-        cActive = true;
-        if (cActive) Time.timeScale = 0f;
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    #endregion
+
+    /*--ESCENES CONCRETES--*/
+    #region Scenes
 
     public void goToMenu()
     {
         SceneManager.LoadScene("Menu");
     }
 
-    public void nextLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    /*--NIVELLS CONCRETS--*/
     public void Level1()
     {
         SceneManager.LoadScene("Level_1");
@@ -73,7 +68,30 @@ public class levelController : MonoBehaviour
         SceneManager.LoadScene("Level_2");
     }
 
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level_3");
+    }
+
+    public void Level4()
+    {
+        SceneManager.LoadScene("Level_4");
+    }
+    #endregion
+
+    /*--TOT CANVAS WIN--*/
+    #region cWin
+    public void activateCWin()
+    {
+        cWin.GetComponent<Canvas>().enabled = true;
+        cActive = true;
+        if (cActive) Time.timeScale = 0f;
+
+    }
+    #endregion
+
     /*--TOT CANVAS RETRY--*/
+    #region cRetry
     public void activateCRetry()
     {
         Debug.Log("Has perdut");
@@ -87,10 +105,10 @@ public class levelController : MonoBehaviour
     {
         SceneManager.LoadScene(scene.name);
     }
-
+    #endregion
 
     /*--TOT CANVAS PAUSE--*/
-
+    #region cPause
     public void activeCPause()
     {
         cPause.GetComponent<Canvas>().enabled = true;
@@ -105,6 +123,7 @@ public class levelController : MonoBehaviour
         pActive = false;
         //AQUI FALTA EL CONTADOR, PERO NO DESDE EL BOTO
     }
+    #endregion
 
     /*--MIRA TOTA L'ESTONA X ENEMICS QUE QUEDEN--*/
     public void EnemyArray()

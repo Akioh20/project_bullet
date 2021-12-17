@@ -54,12 +54,10 @@ public class bullet_controller : MonoBehaviour
         this.transform.position += currentMovement.normalized * movementInOneFrame;
         #endregion
 
-        
         if (Input.GetMouseButtonDown(0) && counter == 0)
         {
             ResetBullet();
         }
-
 
         #region SPEED
         if (Input.GetMouseButtonDown(1))
