@@ -17,6 +17,8 @@ public class levelControllerIntro : MonoBehaviour
     public GameObject[] enemies;
     public GameObject bullet;
 
+    bullet_controller bScript;
+
     void Start()
     {
         cRetry.GetComponent<Canvas>().enabled = false;
@@ -26,6 +28,8 @@ public class levelControllerIntro : MonoBehaviour
         pActive = false;
 
         scene = SceneManager.GetActiveScene(); //AGAFA LA ESCENA ACTIVA, NECESSARI PER EL RETRY
+
+        bScript = gameObject.GetComponent<bullet_controller>();
     }
 
     void Update()
@@ -82,6 +86,7 @@ public class levelControllerIntro : MonoBehaviour
         Time.timeScale = 1f;
         pActive = false;
         //AQUI FALTA EL CONTADOR, PERO NO DESDE EL BOTO
+        //També podriem fer servir el bullet_Controller.ResetBullet()
     }
 
     /*--OBSERVAR QUANTS ENEMICS QUEDEN--*/
