@@ -53,13 +53,11 @@ public class bullet_controller : MonoBehaviour
 
 
         //EN CAP MOMENT ESTEM FENT SERVIR LA VARIABLE COUNTER. S
-        Debug.Log("Counter: " + counter);
+        //Debug.Log("Counter: " + counter);
 
         if (Input.GetMouseButtonDown(0) && counter == 0)
         {
-            Debug.Log("START");
-            Time.timeScale = 1f;
-            counter += 1;
+            ResetBullet();
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -129,11 +127,8 @@ public class bullet_controller : MonoBehaviour
 
     public void ResetBullet()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
             Debug.Log("START");
             Time.timeScale = 1f;
             counter += 1;
-        }
     }
 }
