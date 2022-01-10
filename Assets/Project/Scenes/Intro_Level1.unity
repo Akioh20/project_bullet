@@ -394,7 +394,7 @@ MonoBehaviour:
   m_text: Click to start!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63477070a3195974b97caf278409d90e, type: 2}
-  m_sharedMaterial: {fileID: -3333858559400912891, guid: 63477070a3195974b97caf278409d90e, type: 2}
+  m_sharedMaterial: {fileID: -131241385892283658, guid: 63477070a3195974b97caf278409d90e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_text: LOOK, SOME ENEMIES!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63477070a3195974b97caf278409d90e, type: 2}
-  m_sharedMaterial: {fileID: -3333858559400912891, guid: 63477070a3195974b97caf278409d90e, type: 2}
+  m_sharedMaterial: {fileID: -131241385892283658, guid: 63477070a3195974b97caf278409d90e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_text: RUN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63477070a3195974b97caf278409d90e, type: 2}
-  m_sharedMaterial: {fileID: -3333858559400912891, guid: 63477070a3195974b97caf278409d90e, type: 2}
+  m_sharedMaterial: {fileID: -131241385892283658, guid: 63477070a3195974b97caf278409d90e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1859,7 +1859,7 @@ MonoBehaviour:
   m_text: "You can run with \nright click"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63477070a3195974b97caf278409d90e, type: 2}
-  m_sharedMaterial: {fileID: -3333858559400912891, guid: 63477070a3195974b97caf278409d90e, type: 2}
+  m_sharedMaterial: {fileID: -131241385892283658, guid: 63477070a3195974b97caf278409d90e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3038,7 +3038,7 @@ MonoBehaviour:
   m_text: pass through the portal!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63477070a3195974b97caf278409d90e, type: 2}
-  m_sharedMaterial: {fileID: -3333858559400912891, guid: 63477070a3195974b97caf278409d90e, type: 2}
+  m_sharedMaterial: {fileID: -131241385892283658, guid: 63477070a3195974b97caf278409d90e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3536,7 +3536,7 @@ MonoBehaviour:
   m_text: "Try not to die against \nthe wall"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63477070a3195974b97caf278409d90e, type: 2}
-  m_sharedMaterial: {fileID: -3333858559400912891, guid: 63477070a3195974b97caf278409d90e, type: 2}
+  m_sharedMaterial: {fileID: -131241385892283658, guid: 63477070a3195974b97caf278409d90e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
