@@ -910,7 +910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997528, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997540, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_Pivot.x
@@ -1145,7 +1145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5727968476731756673, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5727968476731756677, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
       propertyPath: m_Pivot.x
@@ -1668,8 +1668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b444138b4c3ae7459d1e4c7cdebf136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomLevel: 0
-  parentObject: {fileID: 0}
 --- !u!114 &737089681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,7 +2962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &1548567196
 Canvas:
   m_ObjectHideFlags: 0
@@ -3675,7 +3673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1932834603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3690,6 +3688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cRetry: {fileID: 1938497625}
   cWin: {fileID: 1216191216}
+  cPause: {fileID: 0}
   enemies:
   - {fileID: 825858412}
   - {fileID: 113359764}
