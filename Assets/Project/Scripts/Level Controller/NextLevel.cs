@@ -18,7 +18,6 @@ public class NextLevel : MonoBehaviour
         {
             if(scene.name == "Intro_Level1")
             {
-                Debug.Log("Vaig al Intro_Lvl2");
                 SceneManager.LoadScene("Intro_Level2");
             }
             else if (scene.name == "Intro_Level2")
