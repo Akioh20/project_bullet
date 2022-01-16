@@ -54,7 +54,7 @@ public class NextLevel : MonoBehaviour
             }
             else if (scene.name == "Intro_Level10")
             {
-                SceneManager.LoadScene("Level_1");
+                SceneManager.LoadScene("Level_11");
             }
 
         }
