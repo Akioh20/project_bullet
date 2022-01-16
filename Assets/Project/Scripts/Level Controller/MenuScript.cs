@@ -48,7 +48,6 @@ public class MenuScript : MonoBehaviour
 
     public void ExitOnClick()
     {
-        Debug.Log("Adeeeu");
         Application.Quit();
     }
 
@@ -56,51 +55,6 @@ public class MenuScript : MonoBehaviour
     public void IntroLvl1()
     {
         SceneManager.LoadScene("Intro_Level1", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl2()
-    {
-        SceneManager.LoadScene("Intro_Level2", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl3()
-    {
-        SceneManager.LoadScene("Intro_Level3", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl4()
-    {
-        SceneManager.LoadScene("Intro_Level4", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl5()
-    {
-        SceneManager.LoadScene("Intro_Level5", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl6()
-    {
-        SceneManager.LoadScene("Intro_Level6", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl7()
-    {
-        SceneManager.LoadScene("Intro_Level7", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl8()
-    {
-        SceneManager.LoadScene("Intro_Level8", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl9()
-    {
-        SceneManager.LoadScene("Intro_Level9", LoadSceneMode.Single);
-    }
-
-    public void IntroLvl10()
-    {
-        SceneManager.LoadScene("Intro_Level10", LoadSceneMode.Single);
     }
     #endregion
 
@@ -166,7 +120,6 @@ public class MenuScript : MonoBehaviour
 
     public void GoToLvl23()
     {
-        Debug.Log("Lolgitkraken");
         SceneManager.LoadScene("Level_23", LoadSceneMode.Single);
     }
 
