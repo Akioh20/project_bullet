@@ -166,6 +166,7 @@ public class MenuScript : MonoBehaviour
 
     public void GoToLvl23()
     {
+        Debug.Log("Lolgitkraken");
         SceneManager.LoadScene("Level_23", LoadSceneMode.Single);
     }
 
