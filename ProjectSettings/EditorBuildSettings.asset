@@ -23,9 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/Level_17.unity
     guid: a4f25c6ffed89474c84061f464d0e50a
-  - enabled: 1
-    path: Assets/Project/Scenes/Level_4.unity
-    guid: 1ffa7f6c6de1f394cb328e806c4a4094
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Project/Scenes/zBouncy.unity
     guid: c2c1b6948cb2f064f9e3be9c76c8233b
@@ -56,4 +56,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/Intro_Level10.unity
     guid: 9bf3e3c3c857ef142886ccc9fc3a9c7c
+  - enabled: 1
+    path: Assets/Project/Scenes/Level_11.unity
+    guid: 04c4fb213f148584b89b152e1b951ee7
+  - enabled: 1
+    path: Assets/Project/Scenes/Level_12.unity
+    guid: 18c05d4b9af2c024ea476839c6f95f1c
+  - enabled: 1
+    path: Assets/Project/Scenes/Level_21.unity
+    guid: 03f51dbee73448944b0b7c8cd776ca25
+  - enabled: 1
+    path: Assets/Project/Scenes/Level_22.unity
+    guid: b49f167021c04964aa063f685076dd95
+  - enabled: 1
+    path: Assets/Project/Scenes/Level_23.unity
+    guid: 77e67501709e1064b98aa3d32af4d26b
   m_configObjects: {}
