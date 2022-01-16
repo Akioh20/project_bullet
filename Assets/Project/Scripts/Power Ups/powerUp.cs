@@ -13,9 +13,9 @@ public class powerUp : MonoBehaviour
 
         if (col.gameObject.name == "Character" && gameObject.tag == "Fire")
         {
+            getPowerUp.Play();
             bScript.pFire = true;
             Debug.Log("P-Fire caught");
-            getPowerUp.Play();
             Destroy(gameObject);
         }
 

@@ -131,5 +131,30 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level_25", LoadSceneMode.Single);
     }
+
+    public void GoToLvl26()
+    {
+        SceneManager.LoadScene("Level_26", LoadSceneMode.Single);
+    }
+
+    public void GoToLvl27()
+    {
+        SceneManager.LoadScene("Level_27", LoadSceneMode.Single);
+    }
+
+    public void GoToLvl28()
+    {
+        SceneManager.LoadScene("Level_28", LoadSceneMode.Single);
+    }
+
+    public void GoToLvl29()
+    {
+        SceneManager.LoadScene("Level_29", LoadSceneMode.Single);
+    }
+
+    public void GoToLvl30()
+    {
+        SceneManager.LoadScene("Level_30", LoadSceneMode.Single);
+    }
     #endregion
 }
