@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/Menu.unity
     guid: 0d85368a7d00f64409d27a06d8f8d211
+<<<<<<< HEAD
+  - enabled: 0
+    path: 
+    guid: a65bdf3edeac21a41a1841041aa4d704
+=======
+>>>>>>> develop
   - enabled: 1
     path: Assets/Project/Scenes/Intro_Level1.unity
     guid: d7682f09ced10f64cbbe4cdc67c219ff
@@ -25,11 +31,31 @@ EditorBuildSettings:
     guid: a4f25c6ffed89474c84061f464d0e50a
   - enabled: 0
     path: 
+<<<<<<< HEAD
+    guid: ccb1dcd2f06a20a4ea27a199dc379ab1
+  - enabled: 0
+    path: Assets/Project/Scenes/Plantilla_levels.unity
+    guid: 1458e2c0813165c4986dbcc119120ef5
+  - enabled: 0
+    path: 
+    guid: 07d3f271343a31c4bb0d70dbf6041a2e
+=======
     guid: 00000000000000000000000000000000
+>>>>>>> develop
   - enabled: 0
     path: Assets/Project/Scenes/zBouncy.unity
     guid: c2c1b6948cb2f064f9e3be9c76c8233b
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Project/Scenes/Intro_Level1.unity
+    guid: d7682f09ced10f64cbbe4cdc67c219ff
+  - enabled: 1
+    path: Assets/Project/Scenes/Intro_Level2.unity
+    guid: c315bbcf594f20e4eb03eb7396c461d5
+  - enabled: 1
+    path: Assets/Project/Scenes/Intro_Level3.unity
+    guid: b104c06fb60d59c4a8cf79d7b48f0aef
+=======
     path: Assets/Project/Scenes/Intro_Level2.unity
     guid: 82712b96c306fad4a81a0dbd86dbc523
   - enabled: 1
@@ -63,12 +89,13 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/Level_12.unity
     guid: 18c05d4b9af2c024ea476839c6f95f1c
   - enabled: 1
-    path: Assets/Project/Scenes/Level_21.unity
+    path: Assets/Project/Scenes/Level_26.unity
     guid: 03f51dbee73448944b0b7c8cd776ca25
   - enabled: 1
-    path: Assets/Project/Scenes/Level_22.unity
+    path: Assets/Project/Scenes/Level_27.unity
     guid: b49f167021c04964aa063f685076dd95
   - enabled: 1
-    path: Assets/Project/Scenes/Level_23.unity
+    path: Assets/Project/Scenes/Level_29.unity
     guid: 77e67501709e1064b98aa3d32af4d26b
+>>>>>>> develop
   m_configObjects: {}
