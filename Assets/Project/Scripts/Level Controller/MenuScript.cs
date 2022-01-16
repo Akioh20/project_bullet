@@ -9,7 +9,6 @@ public class MenuScript : MonoBehaviour
     public Canvas menuLevel;
     public Canvas menuOptions;
 
-
     void Start()
     {
         menuSelect.GetComponent<Canvas>().enabled = false;
