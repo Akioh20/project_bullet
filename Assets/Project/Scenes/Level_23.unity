@@ -130,6 +130,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3258691257920015139, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 3258691257920015139, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: goToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258691257920015139, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: levelController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258691258292486225, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 3258691258292486225, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: bReturnPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258691258292486225, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: levelController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3258691258521960872, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
       propertyPath: m_Name
       value: --------cPause
@@ -221,6 +245,18 @@ PrefabInstance:
     - target: {fileID: 3258691258521960876, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258691259331018644, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 3258691259331018644, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: goToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258691259331018644, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: levelController, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d82d6a1ed7a93340afe3e14aa94b2ff, type: 3}
@@ -2476,6 +2512,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5727968476792700859, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 5727968476792700859, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727968477263448257, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 5727968477263448257, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: goToMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb52e420cd3e6c4bb85d6c0cf66fe11, type: 3}
 --- !u!1001 &1635338546
@@ -3249,6 +3301,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6402295499807035294, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 6402295499807035294, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: goToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402295499885018634, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 702186569}
+    - target: {fileID: 6402295499885018634, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: bRetry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402295499885018634, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: levelController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402295499885018634, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6402295500640997528, guid: 8cf5393d95690a746a7826b7bd63b39e, type: 3}
       propertyPath: m_Name
       value: --------CRetry
