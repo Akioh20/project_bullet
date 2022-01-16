@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class powerUp : MonoBehaviour
 {
+    public AudioSource getPowerUp;
+    public AudioSource offPowerUp;
+
     void OnTriggerEnter2D(Collider2D col)
     {
         bullet_controller bScript = col.gameObject.GetComponent<bullet_controller>();
@@ -12,6 +15,7 @@ public class powerUp : MonoBehaviour
         {
             bScript.pFire = true;
             Debug.Log("P-Fire caught");
+            getPowerUp.Play();
             Destroy(gameObject);
         }
 
