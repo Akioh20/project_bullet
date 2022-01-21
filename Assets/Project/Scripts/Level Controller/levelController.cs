@@ -20,6 +20,8 @@ public class levelController : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<audioManager>().Play("BounceSound");
+
         cRetry.GetComponent<Canvas>().enabled = false;
         cWin.GetComponent<Canvas>().enabled = false;
         cActive = false;

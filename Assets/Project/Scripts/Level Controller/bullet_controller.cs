@@ -128,7 +128,6 @@ public class bullet_controller : MonoBehaviour
 
     public void ResetBullet()
     {
-            Debug.Log("START");
             Time.timeScale = 1f;
             counter += 1;
     }
