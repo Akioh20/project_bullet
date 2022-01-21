@@ -31,6 +31,11 @@ public class audioManager : MonoBehaviour{
         }
     }
 
+    private void Start()
+    {
+        Play("wood");
+    }
+
     public void Play(string name)
     {
         //Quan li posem el nom, posa el clip que toca
