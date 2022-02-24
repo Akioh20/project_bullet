@@ -6,6 +6,7 @@ public class CameraShake : MonoBehaviour
 {
     public Camera mainCam;
     float shakeAmount = 0.5f;
+    public float range = 100f;
     
     void Awake()
     {

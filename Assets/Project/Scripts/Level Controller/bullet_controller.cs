@@ -131,4 +131,5 @@ public class bullet_controller : MonoBehaviour
             Time.timeScale = 1f;
             counter += 1;
     }
+
 }
