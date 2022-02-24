@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalEntrant
       objectReference: {fileID: 0}
+    - target: {fileID: 5725566595419477924, guid: f4c0928d9bf8d33479e2525903529c3c, type: 3}
+      propertyPath: portalFinal
+      value: 
+      objectReference: {fileID: 1102918142}
     - target: {fileID: 5725566595419477926, guid: f4c0928d9bf8d33479e2525903529c3c, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -960,6 +964,11 @@ PrefabInstance:
 --- !u!4 &1102918141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4443618335780159086, guid: b1e21fdf768a92741889a2022036c91c, type: 3}
+  m_PrefabInstance: {fileID: 1102918140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1102918142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4443618335780159082, guid: b1e21fdf768a92741889a2022036c91c, type: 3}
   m_PrefabInstance: {fileID: 1102918140}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1104414771
