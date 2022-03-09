@@ -18,13 +18,15 @@ public class bullet_controller : MonoBehaviour
     private int counter = 0;
     public ParticleSystem deathParticles = null;
     Vector3 currentMovement = Vector3.right;
-    
+    float distance;
+
     void Start()
     {
         cRetry.GetComponent<Canvas>().enabled = false;
         pFire = false;
         pShield = false;
         Time.timeScale = 0f;
+
     }
 
     void Update()
@@ -53,6 +55,16 @@ public class bullet_controller : MonoBehaviour
 
         this.transform.position += currentMovement.normalized * movementInOneFrame;
         #endregion
+
+        /////CALCULATION OF THE DISTANCE BTW TWO POINTS 
+        distance = Vector3.Distance(transform.position, mousePos);
+        Debug.Log(":)");
+        Debug.Log(distance);
+        //Here we're going to set that in a determinated range, it doesn't take into account
+        if(distance < 1)
+        {
+
+        }
 
         if (Input.GetMouseButtonDown(0) && counter == 0)
         {
