@@ -57,7 +57,7 @@ public class bullet_controller : MonoBehaviour
         #endregion
 
         /////CALCULATION OF THE DISTANCE BTW TWO POINTS 
-        distance = Vector3.Distance(transform.position, mousePos);
+        distance = Vector3.Distance( );
         Debug.Log(":)");
         Debug.Log(distance);
         //Here we're going to set that in a determinated range, it doesn't take into account
