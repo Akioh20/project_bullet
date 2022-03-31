@@ -18,7 +18,8 @@ public class bullet_controller : MonoBehaviour
     private int counter = 0;
     public ParticleSystem deathParticles = null;
     Vector3 currentMovement = Vector3.right;
-    float distance;
+    float dist;
+  
 
     void Start()
     {
@@ -56,16 +57,6 @@ public class bullet_controller : MonoBehaviour
         this.transform.position += currentMovement.normalized * movementInOneFrame;
         #endregion
 
-        /////CALCULATION OF THE DISTANCE BTW TWO POINTS 
-        distance = Vector3.Distance( );
-        Debug.Log(":)");
-        Debug.Log(distance);
-        //Here we're going to set that in a determinated range, it doesn't take into account
-        if(distance < 1)
-        {
-
-        }
-
         if (Input.GetMouseButtonDown(0) && counter == 0)
         {
             ResetBullet();
@@ -82,6 +73,16 @@ public class bullet_controller : MonoBehaviour
             movSpeed = 6f;
         }
         #endregion
+
+
+        float dist = Vector3.Distance(mousePos, transform.position);
+        Debug.Log(dist);
+
+        if(dist < 1)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -144,4 +145,14 @@ public class bullet_controller : MonoBehaviour
             counter += 1;
     }
 
+    /*private float CalculateDistance()
+    {
+        /////CALCULATION OF THE DISTANCE BTW TWO POINTS 
+        distance = Vector2.Distance;
+        return distance
+        //Here we're going to set that in a determinated range, it doesn't take into account
+        if (distance < 1)
+        {
+
+        }*/
 }
